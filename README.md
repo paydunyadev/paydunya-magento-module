@@ -1,23 +1,21 @@
 # Installation
 
-- Step #1: Copy the Paydunya folder into to app/code directory
-- Step #2: Run: composer config repositories.paydunyaexpress git https://github.com/paydunya/module-paydunyaexpress
-- Step #3: composer require paydunya/module-paydunyaexpress:dev-master
-- Step #4: Run: php bin/magento module:enable Paydunya_Paydunyaexpress --clear-static-content
-- Step #5: Run the magento setup upgrade function: bin/magento setup:upgrade 
+- Etape #1: Faites un `composer require pay_dunya//magento-module dev-master`
+- Etape #2: Puis activez le module avec `php bin/magento module:enable Paydunya_PaydunyaMagento --clear-static-content`
+- Etape #3: Enfin exécutez `bin/magento setup:upgrade` afin de permettre à Magento de prendre en compte les modifs 
 
-Once you have done this, you need to follow these steps to get it working:
+Après avoir fais ceci, suivez les instructions ci-dessous pour que tout puisse fonctionner à la perfection
 
-1.  Create a merchant account (Business account) at https://www.paydunya.com. 
-    After registration, you will be able to create an application and get your private keys and token.
-2.  Log into your Magento admin and Clear your cache
-    Go to Stores -> Configuration -> Sales -> Payment Methods and you will see. "PayDunya"
-3.  Setting configurations. 
-    Set Enabled - YES. 
-    Test API - NO (if you set this to yes, this means you are using our test PayDunya API)
-    Enter the Private Key & Token.
-    New order status - This is the default order status set when a user selects PayDunya to "processing".
-    All orders with this status mean the user created an order but pending the payment.
-4.  Save configurations
+1. Créez un compte marchand (compte professionnel) sur https://www.paydunya.com.
+     Après l’enregistrement, vous pourrez créer une application et obtenir vos clés privées et votre jeton.
+2. Connectez-vous à votre administrateur Magento et effacez votre cache.
+     Allez dans Magasins -> Configuration -> Ventes -> Méthodes de paiement et vous verrez. "PayDunya"
+3. Configurer les configurations.
+     Définir activé - OUI.
+     API de test - NON (si vous définissez cette option sur oui, cela signifie que vous utilisez notre API de test PayDunya)
+     Entrez la clé privée et le jeton.
+     Nouveau statut de commande - Il s'agit du statut de commande par défaut défini lorsqu'un utilisateur sélectionne PayDunya pour le "traitement".
+     Toutes les commandes avec ce statut signifient que l'utilisateur a créé une commande mais attend le paiement.
+4. Enregistrer les configurations
   
-Paydunya - Beyond limits!
+Paydunya - Au-delà des limites!
