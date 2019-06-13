@@ -1,5 +1,5 @@
 {
-    "name": "paydunya/magento-module",
+    "name": "pay_dunya/magento-module",
     "version": "2.0.0",
     "type": "magento2-module",
     "description": "PayDunya Magento Payment Gateway",
