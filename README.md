@@ -10,7 +10,7 @@
 
 ## Installation proprement dite
 
-- Etape #1 : Faites un `composer require pay_dunya//magento-module dev-master`
+- Etape #1 : Faites un `composer require paydunya/paydunya-magento-module`
 - Etape #2 : Donnez comme `Username`, la clé public générée (`Public Key`) lors de la génération des clés d'accès sur votre profil (cf. `Préalable`) et comme mot de passe
      la clé privée (`Public Key`)
 - Etape #3 : Puis activez le module avec `php bin/magento module:enable Paydunya_PaydunyaMagento --clear-static-content`
